@@ -11,16 +11,16 @@ var hr = document.querySelector("hr");
 var h2 = document.querySelector("h2");
 var startMessage = document.querySelector(".startMessage");
 var comeback = document.querySelector("#comeBack");
-var scoreBtn = document.querySelector(".scores");
+var scoreButtons = document.querySelector(".scores");
 var form = document.querySelector(".form");
 var submitBtn = document.querySelector(".submit");
 
 //var input label//
-
+var label = document.querySelector("label");
 var input = document.querySelector(".done");
 
 //var boxname labels//
-
+var boxName = document.getElementById(boxName);
 var item = document.getElementsByClassName("listItem");
 var questionsIndex = 0;
 var answersIndex = 0;
@@ -227,8 +227,8 @@ function gameOver() {
 
 function checkAnswer(id) {
    
-    hr.style.display = 'block';
-    comeback.style.display = 'block';
+    hr.style.display = "block";
+    comeback.style.display = "block";
    
     if(id == correctAnswersId[questionsIndex]) {
         comeback.innerHTML = "Correct!";
@@ -262,7 +262,9 @@ function displayQuestion() {
     h2.innerHTML = questions[questionsIndex];
    
     for(var i = 0; i < 4; i++) {
-      
+
+        console.log("i: " + i + "  questionsIndex: " + questionsIndex);
+        
         if(questionsIndex === answers.length){
             removeLi();
             clock = -1;
@@ -321,18 +323,18 @@ function highScores() {
     removeLi();
     p.style.display = "block";
     p.innerHTML = "something";
-    // if(currentPlayerIndex.length > 0) {
+    if(currentPlayerIndex.length > 0) {
         console.log("highest score index:  " + index);
         var highScore = document.createElement("h2");
         highScore.setAttribute("class", "highScore");
         highScore.innerHTML = "The Current High Score Is: " + scores[index];
         document.querySelector("body").appendChild(highScore);
-    // }
+    }
     // render a heading for your 'Previous Scores'
-    // if(currentPlayerIndex.length > 0) {
-    //     h2.style.display = 'block';
-    //     h2.innerHTML = "Your Previous Scores";
-    // }
+    if(currentPlayerIndex.length > 0) {
+        h2.style.display = "block";
+        h2.innerHTML = "Your Previous Scores";
+    }
     
    //Render prior scores for current user//
 
@@ -374,6 +376,7 @@ function highestScore() {
              index = i;
         }
     }
+    console.log(index);
     
     return index;
 }
