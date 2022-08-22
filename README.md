@@ -9,7 +9,7 @@ This application allows users to answer quiz formatted questions while the clock
 Overall, this app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript while having mobile device capability.
 
 
-Below there is an acceptance criteria outlined to define the standards and expectations of this application:
+Located below there is an acceptance criteria outlined to define the standards and expectations of this application:
 
 ## Acceptance Criteria
 
@@ -37,32 +37,37 @@ The following gif and images demonstrate the application's appearance and functi
 ![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
 
 
+### Image-1
+
+
+### Image-2
+
+
+### Image-3
+
+
+### Image-4
+
+
+### Image-5
+
+
+
 Below are the links to both the live deployed webpage and GitHUB Repository URLs:
 
-## Depolyed Webpage URL
+### Depolyed Webpage URL
 
 * 
 
-## GitHUB Repository URL
+### GitHUB Repository URL
 
 * 
 
 
 Below is a evaluation criteria which will serve as a guideline when performing an evaluation of this application in terms of all the standard terms typically used during new application launches:
 
-## Grading Requirements
+## Evaluation Guideline
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
 
 ### Technical Acceptance Criteria: 40%
 

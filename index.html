@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CSS Box Styling</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Quiz Bowl Countdown</title>
   </head>
-  <body>
-    <header>
-      <div class= "large-font">Word Guess Game</div>
-      <button class="start-button">Start</button>
-    </header>
+  <body id="reset">
 
-    <main>
-      <section>
-        <div class="card word-guess">
-          <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
-        </div>
-      </section>
-
-      <section>
-        <div class="card results">
-          <div class = "win-loss-container">
-          <div>
-          <h2>Wins: <span class="win">0 </span> </h2>
-          <h2>Losses: <span class="lose">0</span></h2>
-        </div>
-          <button class="reset-button">Reset Score</button>
+    <header class="header">QUIZ Bowl Countdown
+      <a href="#" class="highScores" onclick="highScores()">View High Scores</a>
+      <div class="header-right">
+        <a class="timer" id="timer">Timer</a>
       </div>
-          <div class= "card timer">
-            <div class = "timer-text">
-            <div class="large-font timer-count">10</div>
-            <h3>seconds remaining</h3>
-          </div>
-        
-          </div>
-        </div>
+    </header>
+    
+    <main class="wrapper">
+      <div id="questions">
+      <section class ="content">
+        <h1 class="heading">JavaScript Knowledge Check</h1>
+        <h2 class="message"></h2>
+        <p class="startMessage">Hello! Answer the following JavaScript related questions within the time limit!  
+          Each correct answer is worth 10-points.  
+          Remember! Incorrect answers will reduce your score by 2 points
+          AND decrease the time by 5-seconds!</p>
+      
+        <ol id="answers"></ol>
+        </div>  
+        <button id="start" class="btn" onclick="displayQuestion()">Start Quiz</button>
       </section>
+      <section class="response">
+        <hr />
+        <p id="comeBack"></p>
+      </section>
+      <section class="done">
+        <form class="form" action="#">
+          <label for="inits">Enter Your Initials:</label>
+          <input class="box" type="text" id="fname" name="inits" onclick="this.value=''">
+          <input class="submit" type="submit" name="inits">
+        </form>
+      </section>
+      <section class="scores">
+        <button id="goBack" class="scoreBtn" onclick="reset()">Play again</button>
+        <button id="clear" class="scoreBtn" onclick="clearScores()">Clear Scores</button>
+      
+      </section>
+
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
