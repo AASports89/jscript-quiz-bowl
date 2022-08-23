@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Quiz Bowl Countdown</title>
+    <title>JS Quiz Bowl Countdown</title>
   </head>
   <body id="reset">
 
-    <header class="header">QUIZ Bowl Countdown
+    <header class="header">
+      <h1 class='heading'>Java$cript Quiz Bowl</h1>
+      <img src="./assets/images/js.jpg">
       <a href="#" class="highScores" onclick="highScores()">View High Scores</a>
       <div class="header-right">
         <a class="timer" id="timer">Timer</a>
       </div>
     </header>
-    
+
     <main class="wrapper">
-      <div id="questions">
-      <section class ="content">
-        <h1 class="heading">JavaScript Knowledge Check</h1>
-        <h2 class="message"></h2>
-        <p class="startMessage">Hello! Answer the following JavaScript related questions within the time limit!  
-          Each correct answer is worth 10-points.  
-          Remember! Incorrect answers will reduce your score by 2 points
-          AND decrease the time by 5-seconds!</p>
       
-        <ol id="answers"></ol>
+      <section class ="content">
+        <h2 class="message"></h2>
+        <p class="startMessage">
+          READY!?
+          BE SURE TO ANSWER ALL QUESTIONS BEFORE TIMER EXPIRES!
+          EACH CORRECT ANSWER IS WORTH +10PTS!
+          WRONG ANSWERS RESULT IN -10PTS & -2SECS!
+          GOOD LUCK!
+        </p>
+        <div>
+          <ol id="answers"></ol>
         </div>  
-        <button id="start" class="btn" onclick="displayQuestion()">Start Quiz</button>
+        <button id="start" class="btn" onclick="displayQuestion()">Start</button>
       </section>
       <section class="response">
         <hr />
@@ -36,15 +40,14 @@
       </section>
       <section class="done">
         <form class="form" action="#">
-          <label for="inits">Enter Your Initials:</label>
+          <label for="inits">Save Your Score:</label>
           <input class="box" type="text" id="fname" name="inits" onclick="this.value=''">
           <input class="submit" type="submit" name="inits">
         </form>
       </section>
       <section class="scores">
-        <button id="goBack" class="scoreBtn" onclick="reset()">Play again</button>
+        <button id="goBack" class="scoreBtn" onclick="reset()">Retry</button>
         <button id="clear" class="scoreBtn" onclick="clearScores()">Clear Scores</button>
-      
       </section>
 
     </main>

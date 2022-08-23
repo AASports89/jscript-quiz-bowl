@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --royal: #0563c1;
+  --smokey: whitesmoke;
+  }
+  
+
+body {
+  background-color: #c3d9f4;
+}
+
+/*********************************** START PAGE ********************************/
+
+main {
+  box-sizing: border-box;
+  padding-top: 10px;
+  border: 2px black solid;
+  border-radius: 1em;
+  background-color: rgb(144, 151, 163);
+  background-image: linear-gradient(
+    rgba(112, 111, 116, 0.914) 0%,
+    rgb(211, 211, 224) 100%);
+  font-size: 16px;  
+}
+
+/********************************** START HEADER *******************************/
+
+.header {
+  height: 120px;
+  overflow: hidden;
+  background-color: var(--royal);
+  background-image: linear-gradient(
+    rgba(10, 43, 127, 0.914) 0%,
+    rgb(126, 172, 245) 100%);
+    margin-bottom: 20px;
+    padding-top: 15px;
+  border: solid 2px black;
+  border-radius: 1em;
+}
+
+img {
+  width: 500px;
+  height: 90px;
+  border-radius: 0.5em;
+  border: dashed 1.5px var(--smokey);
+}
+
+.heading {
+  position: absolute;
+  padding-left: 415px;
+  color: var(--smokey);
+  text-justify: center;
+}
+
+#highScores {
+  float: left;
+  width: 200px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-left: 25px;
+  margin-top: 15px;
+  background-color: rgb(96, 98, 116);
+  background-image: linear-gradient(
+    rgba(209, 209, 231, 0.914) 0%,
+    rgb(83, 82, 97) 100%);
+    text-decoration: none;
+}
+
+/***************************** ACCESS HIGH SCORES*******************************/
+
+.highScores {
+  color: var(--smokey);
+  font-size: 16px;
+  font-weight: bold;
+    border: solid 2px var(--smokey);
+    border-radius: 2em;
+    width: 200px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-right: 115px;
+    background-color: rgb(96, 98, 116);
+    background-image: linear-gradient(
+      rgba(209, 209, 231, 0.914) 0%,
+      rgb(83, 82, 97) 100%);
+  }
+
+.highScores:hover {
+  background-color: royalblue;
+  border: dashed 2px var(--smokey);
+}
+/********************************** TIMER ATTRIBUTES ***************************/
+
+.header-right {
+  color: var(--smokey);
+  font-size: 16px;
+  font-weight: bold;
+  border: solid 2px var(--smokey);
+  border-radius: 2em;
+  width: 200px;
+  height: 50px;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  margin-right: 25px;
+  margin-top: 15px;
+  background-color: rgb(96, 98, 116);
+  background-image: linear-gradient(
+    rgba(209, 209, 231, 0.914) 0%,
+    rgb(83, 82, 97) 100%);
+}
+
+p {
+  color: rgb(200, 17, 17);
+}
+/*********************************** START PAGE ********************************/
+
+.wrapper {
+  justify-content: center;
+  height: 200%;
+  width: 100%;
+}
+
+.content {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+#start {
+  background-color: var(--royal);
+  background-image: linear-gradient(
+    rgba(10, 43, 127, 0.914) 0%,
+    rgb(126, 172, 245) 100%);
+  color: var(--smokey);
+  margin-top: 30px;
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  border: solid 2px var(--smokey);
+  border-radius: 3rem;
+}
+
+/********************************* END START PAGE ******************************/
+
+/******************************* QUESTIONS START PAGE **************************/
+
+/*** LIST ITEMS ***/ 
+
+ol {
+  background-color: rgb(9, 194, 181);
+  background-image: linear-gradient(
+    rgba(184, 245, 248, 0.914) 0%,
+    rgb(40, 154, 146) 100%);
+  text-align: center;
+  position: relative;
+  color: var(--smokey);
+  border-radius: 2em;
+  border: solid 1.5px var(--smokey);
+  width: 800px;
+  margin-left: -150px;
+}
+
+/*** ORDER LIST OBJECTS ***/
+
+ol {
+    padding: 0;
+    background-color: white;
+  }
+
+/*** PLAYER PREVIOUS SCORES ***/
+
+.previousScores {
+  text-align: left;
+  display: table;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 120px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+li .previousScores {
+  text-align: left;
+  display: table;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 120px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/*** ANSWERS LIST ATTRIBUTES ***/
+
+.listItem {
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 120px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+li:hover {
+  background-color: var(--royal);
+}
+
+/******************************** RESPONSE SECTION *****************************/
+
+hr {
+  display: none;
+}
+
+#comeBack {
+  text-align: center;
+}
+
+/********************************** ALL DONE PAGE ******************************/
+
+.done {
+  width: 500px;
+  max-height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+.form {
+  align-items: center; 
+  text-align: center; 
+  height: 30px;
+  width: 500px;
+  font-size: 1.25em;
+  color: var(--smokey);
+}
+
+input {
+  height: 25px;
+  width: 200px;
+}
+
+.submit {
+  height: 30px;
+  border: solid 2px grey;
+  border-radius: 4px;
+  font-weight: bold;
+  border-radius: 0.5em;
+}
+
+.submit:hover {
+  background-color: var(--royal);
+  color: var(--smokey);
+  border: dashed 2px var(--smokey);
+}
+
+.scores {
+  display: none;
+}
+
+.scoreBtn {
+  border: solid 2px grey;
+  border-radius: 0.5em;
+  height: 35px;
+  width: 125px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#goBack {
+  margin-left: 465px;
+}
+
+.scoreBtn:hover {
+  background-color: var(--royal);
+  color: var(--smokey);
+  border: dashed 2px var(--smokey);
+}
+
+.highScore {
+  color: rgb(5, 137, 198);
+  text-align: center;
+}
+/************************ MOBILE DEVICE SCREEN ATTRIBUTES **********************/
+
+/* @media screen and (width: 768px) {
+  main {
+    flex-direction: column;
+    padding-top: 10px;
+    border: 2px black solid;
+    border-radius: 1em;
+    background-color: rgb(144, 151, 163);
+    background-image: linear-gradient(
+        rgba(112, 111, 116, 0.914) 0%,
+        rgb(211, 211, 224) 100%);
+      font-size: 14px;  
+    }
+
+    .header,
+    .heading {
+      flex-direction: column;
+      height: 120px;
+      width: 90vw;
+      font-size: 66%;
+    }
+
+    .heading {
+      position: relative;
+      margin-left: 250px;
+    }
+    
+.header-right,
+.highScores {
+  flex-direction: column;
+  width: 100px;
+  font-size: 12px;
+}
+
+    img {
+      width: 66%;
+      height: 66%;
+      border-radius: 0.5em;
+      border: dashed 1.5px var(--smokey);
+    }
+
+    #start {
+      background-color: var(--royal);
+      background-image: linear-gradient(
+        rgba(10, 43, 127, 0.914) 0%,
+        rgb(126, 172, 245) 100%);
+      color: var(--smokey);
+      margin-top: 30px;
+      width: 250px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      border: solid 2px var(--smokey);
+      border-radius: 3rem;
+    }
+
+    .wrapper {
+      justify-content: center;
+      height: 150%;
+      width: 66%;
+    }
+    
+    .content {
+      width: 350px;
+      margin: auto;
+      text-align: center;
+    }
+
+  ol {
+    background-color: rgb(9, 194, 181);
+    background-image: linear-gradient(
+      rgba(184, 245, 248, 0.914) 0%,
+      rgb(40, 154, 146) 100%);
+    text-align: center;
+    position: relative;
+    color: var(--smokey);
+    border-radius: 2em;
+    border: solid 1.5px var(--smokey);
+    width: 550px;
+    margin-left: -100px;
+  }
+
+  hr {
+    display: none;
+    width: 33%;
+  }
+  
+  #comeBack {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .reset-button {
+    font-size: 12px;
+    width: 20ox;
+    
+  }
+
+  .timer {
+    height: 200px;
+  }
+}  */
