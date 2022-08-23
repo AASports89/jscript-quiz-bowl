@@ -33,23 +33,37 @@ THEN I can save my initials and my score
 
 The following gif and images demonstrate the application's appearance and functionality:
 
-
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
-
-
-### Image-1
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/images/quiz-bowl.gif)
 
 
-### Image-2
+### Saving Score(s) Using Input/Form:
 
 
-### Image-3
+![A user is able to save their score(s) via inputting their initials following the completion of a round.](./assets/images/quiz-bowl-1.jpg)
 
 
-### Image-4
+### Scores List:
 
 
-### Image-5
+![The user has a full interactive view of the all previous high scores in a user friendly and intuitive list](./assets/images/quiz-bowl-2.jpg)
+
+
+### Questions & Answers Display:
+
+
+![As a user proceeds on completing a round of gameplay, quiz questions are clearly displayed along with the potential answers, which are highlighted when the cursor is navigated over them](./assets/images/quiz-bowl-3.jpg)
+
+
+### Start Page:
+
+
+![The user's first encounter with this application is the 'Start Page', which features a user friendly and intuitive menu in order to proceed to gameplay w/out delay while being informed of the rules](./assets/images/quiz-bowl-4.jpg)
+
+
+### Game Over:
+
+
+![Once the 'timer' during a round of gameplay expires, the user is immediately notfied and directed to the 'End Page'](./assets/images/quiz-bowl.jpg)
 
 
 
@@ -61,7 +75,7 @@ Below are the links to both the live deployed webpage and GitHUB Repository URLs
 
 ### GitHUB Repository URL
 
-* 
+* https://github.com/AASports89/jscript-quiz-bowl
 
 
 Below is a evaluation criteria which will serve as a guideline when performing an evaluation of this application in terms of all the standard terms typically used during new application launches:
