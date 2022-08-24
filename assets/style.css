@@ -46,14 +46,14 @@ img {
   width: 525px;
   height: 90px;
   border-radius: 0.5em;
-  margin-left: 250px;
+  margin-left: 200px;
   border: dashed 1.5px var(--smokey);
 }
 
 .heading {
   position: absolute;
   padding-left: 425px;
-  margin-left: 250px;
+  margin-left: 200px;
   color: var(--smokey);
   text-justify: center;
 }
