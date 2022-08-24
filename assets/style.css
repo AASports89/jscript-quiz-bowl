@@ -295,7 +295,7 @@ input {
 }
 /************************ MOBILE DEVICE SCREEN ATTRIBUTES **********************/
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
 
 main {
   flex-direction: column;
