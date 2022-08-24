@@ -43,8 +43,8 @@ var questions = [
     ["Among the given statements, which statement defines closures in JavaScript?"], 
     ["Arrays in JavaScript are defined by which of the following statement(s)?"],
     ["Will the JavaScript code in the brackets [var js = (function(x) {return x*x;}(10)] work?"], 
-    ["Which of the following are NOT JavaScript data types?"], 
-    ["Where is client-side JavaScript code embedded within HTML documents?"], 
+    // ["Which of the following are NOT JavaScript data types?"], 
+    // ["Where is client-side JavaScript code embedded within HTML documents?"], 
     // ["Which of the following objects is the main entry point to all client-side JavaScript features and APIs?"], 
     // ["Which of the following can be used to call a JavaScript Code Snippet?"],
     // ["Which of the following scoping types does JavaScript use?"],
@@ -89,18 +89,18 @@ var answers = [
         "Error", 
         "Yes, perfectly"
     ],
-    [
-        "Null type", 
-        "Undefined type", 
-        "Number type", 
-        "All of the mentioned"
-    ],
-    [
-        "A URL that uses the special javascript:code", 
-        "A URL that uses the special javascript:protocol", 
-        "A URL that uses the special javascript:encoding", 
-        "A URL that uses the special javascript:stack"
-    ],
+    // [
+    //     "Null type", 
+    //     "Undefined type", 
+    //     "Number type", 
+    //     "All of the mentioned"
+    // ],
+    // [
+    //     "A URL that uses the special javascript:code", 
+    //     "A URL that uses the special javascript:protocol", 
+    //     "A URL that uses the special javascript:encoding", 
+    //     "A URL that uses the special javascript:stack"
+    // ],
     // [
     //     "Position", 
     //     "Window", 
@@ -169,7 +169,7 @@ var answers = [
     //     ],
     ];
 
-var correctAnswersId = [0, 1, 0, 3, 3, 1, 1] //1, 0, 2, 1, 2, 3, 1, 3, 0, 1, 1]//
+var correctAnswersId = [0, 1, 0, 3, 3] //1, 1, 1, 0, 2, 1, 2, 3, 1, 3, 0, 1, 1]//
 
 
 //FUNCTIONS//
@@ -210,7 +210,56 @@ function startTimer() {
     }, 1000);
    
 }
+
+//RESET QUESTION COUNTER & RETURN TO FIRST//
+
+function reset() {
+   
+    userPoints = 0;
     
+    questionsIndex = 0;
+    
+    clock = 100;
+    
+    h2.style.display = 'block';
+
+    scoreButtons.style.display = 'none';
+    form.style.display = 'none';
+    
+    displayQuestion();
+        
+        startTimer();
+  
+    removeLi();
+   
+    h1.style.display = 'none';
+    p.style.display = 'none';
+    startBtn.style.display ='none';
+    
+    hr.style.display = 'none';
+    comeback.style.display = 'none';
+   
+    h2.innerHTML = questions[questionsIndex];
+    
+    for(var i = 0; i < 4; i++) {
+        
+        if(questionsIndex === answers.length){
+            removeLi();
+            clock = -1;
+            document.getElementById('timer').innerHTML = "Timer";
+            allDone();
+        } else {
+            
+            var li = document.createElement("li");
+            li.setAttribute("id", i);
+            li.setAttribute("class", "listItem");
+            li.setAttribute("onClick", 'checkAnswer(this.id)');
+            li.innerHTML = answers[questionsIndex][i];
+            ol.append(li);
+        }
+    }
+    }
+
 //STOP GAME - IF TIMER RUNS OUT//
 
 function gameOver() {
@@ -385,24 +434,6 @@ function highestScore() {
     return index;
 }
 
-//RESET QUESTION COUNTER & RETURN TO FIRST//
-
-function reset() {
-   
-    userPoints = 0;
-    
-    questionsIndex = 0;
-    
-    clock = 60;
-    
-    h2.style.display = 'block';
-
-    scoreButtons.style.display = 'none';
-    form.style.display = 'none';
-    
-    displayQuestion();
-}
-
 function clearScores() {
     console.log("in clearScores()");
     localStorage.clear();
@@ -441,3 +472,4 @@ submitBtn.addEventListener("click", function (event){
    
     highScores();
 });
+
