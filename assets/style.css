@@ -43,7 +43,7 @@ main {
 }
 
 img {
-  width: 500px;
+  width: 525px;
   height: 90px;
   border-radius: 0.5em;
   border: dashed 1.5px var(--smokey);
@@ -51,7 +51,7 @@ img {
 
 .heading {
   position: absolute;
-  padding-left: 415px;
+  padding-left: 425px;
   color: var(--smokey);
   text-justify: center;
 }
@@ -503,7 +503,7 @@ img {
         padding-top: 20px;
         text-align: center;
         position: absolute;
-        margin-left: -250px;
+        margin-left: -260px;
       }
       
       .header-right {
