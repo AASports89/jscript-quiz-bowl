@@ -84,7 +84,7 @@ The following gif and images demonstrate the application's appearance and functi
 
 ### Depolyed Webpage URL:
 
-* 
+* https://aasports89.github.io/jscript-quiz-bowl/
 
 ### GitHUB Repository URL:
 

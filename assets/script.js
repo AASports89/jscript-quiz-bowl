@@ -29,7 +29,7 @@ var id;
 var scores = [];
 var index;
 var currentPlayerIndex = [];
-var clock = 60;
+var clock = 120;
 
 //LOCAL STORAGE SCORES READ/INITIALIZATION//
 
@@ -219,7 +219,7 @@ function reset() {
     
     questionsIndex = 0;
     
-    clock = 100;
+    clock = 120;
     
     h2.style.display = 'block';
 
