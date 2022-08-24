@@ -43,19 +43,19 @@ var questions = [
     ["Among the given statements, which statement defines closures in JavaScript?"], 
     ["Arrays in JavaScript are defined by which of the following statement(s)?"],
     ["Will the JavaScript code in the brackets [var js = (function(x) {return x*x;}(10)] work?"], 
-    // ["Which of the following are NOT JavaScript data types?"], 
-    // ["Where is client-side JavaScript code embedded within HTML documents?"], 
-    // ["Which of the following objects is the main entry point to all client-side JavaScript features and APIs?"], 
-    // ["Which of the following can be used to call a JavaScript Code Snippet?"],
-    // ["Which of the following scoping types does JavaScript use?"],
-    // ["What is the basic difference between JavaScript and JAVA?"], 
-    // ["Why is a JavaScript Engine required?"],
-    // ["Which of the following methods/operations does JavaScript use instead of == and !=?"], 
-    // ["What will be the result or type of error if 'p' in this JavaScript code snippet [Jconsole.log(p)] is NOT defined?"], 
-    // ["What is the prototype represented in the following JavaScript code snippet [function javascript() {}]?"], 
-    // ["Why are event handlers needed in JavaScript?"], 
-    // ["Which of the following is NOT a framework?"],
-    // ["Which of the following properties are triggered in response to JavaScript errors?"]
+    ["Which of the following are NOT JavaScript data types?"], 
+    ["Where is client-side JavaScript code embedded within HTML documents?"], 
+    ["Which of the following objects is the main entry point to all client-side JavaScript features and APIs?"], 
+    ["Which of the following can be used to call a JavaScript Code Snippet?"],
+    ["Which of the following scoping types does JavaScript use?"],
+    ["What is the basic difference between JavaScript and JAVA?"], 
+    ["Why is a JavaScript Engine required?"],
+    ["Which of the following methods/operations does JavaScript use instead of == and !=?"], 
+    ["What will be the result or type of error if 'p' in this JavaScript code snippet [Jconsole.log(p)] is NOT defined?"], 
+    ["What is the prototype represented in the following JavaScript code snippet [function javascript() {}]?"], 
+    ["Why are event handlers needed in JavaScript?"], 
+    ["Which of the following is NOT a framework?"],
+    ["Which of the following properties are triggered in response to JavaScript errors?"]
 ];
 
 var answers = [
@@ -89,87 +89,87 @@ var answers = [
         "Error", 
         "Yes, perfectly"
     ],
-    // [
-    //     "Null type", 
-    //     "Undefined type", 
-    //     "Number type", 
-    //     "All of the mentioned"
-    // ],
-    // [
-    //     "A URL that uses the special javascript:code", 
-    //     "A URL that uses the special javascript:protocol", 
-    //     "A URL that uses the special javascript:encoding", 
-    //     "A URL that uses the special javascript:stack"
-    // ],
-    // [
-    //     "Position", 
-    //     "Window", 
-    //     "Standard", 
-    //     "Location"
-    // ],
-    // [
-    //     "Function/Method", 
-    //     "Preprocessor", 
-    //     "Triggering Event", 
-    //     "RMI"
-    // ],
-    // [
-    //     "Sequential", 
-    //     "Segmental", 
-    //     "Lexical", 
-    //     "Literal"
-    //     ],
-    //     [
-    //         "Functions are considered as fields", 
-    //         "Functions are values, and there is no hard distinction between methods and fields", 
-    //         "Variables are specific", 
-    //         "There is no difference"
-    //     ],
-    //     [
-    //         "Both Compiling & Interpreting the JavaScript", 
-    //         "Parsing the javascript", 
-    //         "Interpreting the JavaScript", 
-    //         "Compiling the JavaScript"
-    //     ],
-    //     [
-    //         "JavaScript uses equalto()", 
-    //         "JavaScript uses equals() and notequals() instead", 
-    //         "JavaScript uses bitwise checking", 
-    //         "JavaScript uses === and !== instead"
-    //     ],
-    //     [
-    //         "Not valid", 
-    //         "Prototype of a function", 
-    //         "Function javascript", 
-    //         "A custom constructor"
-    //     ],
-    //     [
-    //         "Value not found Error", 
-    //         "Reference Error", 
-    //         "Null", 
-    //         "Zero"
-    //     ],
-    //     [
-    //         "Allows JavaScript code to alter the behaviour of windows", 
-    //         "Adds innerHTML page to the code", 
-    //         "Change the server location", 
-    //         "Performs handling of exceptions and occurrences" 
-    //     ],
-    //     [
-    //         "JavaScript .NET", 
-    //         "JavaScript", 
-    //         "Cocoa JS", 
-    //         "jQuery" 
-    //     ],
-    //     [
-    //         "onclick", 
-    //         "onerror", 
-    //         "onmessage", 
-    //         "onexception" 
-    //     ],
+    [
+        "Null type", 
+        "Undefined type", 
+        "Number type", 
+        "All of the mentioned"
+    ],
+    [
+        "A URL that uses the special javascript:code", 
+        "A URL that uses the special javascript:protocol", 
+        "A URL that uses the special javascript:encoding", 
+        "A URL that uses the special javascript:stack"
+    ],
+    [
+        "Position", 
+        "Window", 
+        "Standard", 
+        "Location"
+    ],
+    [
+        "Function/Method", 
+        "Preprocessor", 
+        "Triggering Event", 
+        "RMI"
+    ],
+    [
+        "Sequential", 
+        "Segmental", 
+        "Lexical", 
+        "Literal"
+        ],
+        [
+            "Functions are considered as fields", 
+            "Functions are values, and there is no hard distinction between methods and fields", 
+            "Variables are specific", 
+            "There is no difference"
+        ],
+        [
+            "Both Compiling & Interpreting the JavaScript", 
+            "Parsing the javascript", 
+            "Interpreting the JavaScript", 
+            "Compiling the JavaScript"
+        ],
+        [
+            "JavaScript uses equalto()", 
+            "JavaScript uses equals() and notequals() instead", 
+            "JavaScript uses bitwise checking", 
+            "JavaScript uses === and !== instead"
+        ],
+        [
+            "Not valid", 
+            "Prototype of a function", 
+            "Function javascript", 
+            "A custom constructor"
+        ],
+        [
+            "Value not found Error", 
+            "Reference Error", 
+            "Null", 
+            "Zero"
+        ],
+        [
+            "Allows JavaScript code to alter the behaviour of windows", 
+            "Adds innerHTML page to the code", 
+            "Change the server location", 
+            "Performs handling of exceptions and occurrences" 
+        ],
+        [
+            "JavaScript .NET", 
+            "JavaScript", 
+            "Cocoa JS", 
+            "jQuery" 
+        ],
+        [
+            "onclick", 
+            "onerror", 
+            "onmessage", 
+            "onexception" 
+        ],
     ];
 
-var correctAnswersId = [0, 1, 0, 3, 3] //1, 1, 1, 0, 2, 1, 2, 3, 1, 3, 0, 1, 1]//
+var correctAnswersId = [0, 1, 0, 3, 3, 1, 1, 1, 0, 2, 1, 2, 3, 1, 3, 0, 1, 1]
 
 
 //FUNCTIONS//
