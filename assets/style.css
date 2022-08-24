@@ -160,47 +160,39 @@ p {
 
 /*** LIST ITEMS ***/ 
 
-ol {
-  background-color: rgb(9, 194, 181);
-  background-image: linear-gradient(
-    rgba(184, 245, 248, 0.914) 0%,
-    rgb(40, 154, 146) 100%);
-  text-align: center;
-  position: relative;
-  color: var(--smokey);
-  border-radius: 2em;
-  border: solid 1.5px var(--smokey);
-  width: 800px;
-  margin-left: -150px;
-}
-
 /*** ORDER LIST OBJECTS ***/
 
 ol {
     padding: 0;
-    background-color: white;
+    color: var(--smokey);
+    background-color: rgb(18, 145, 229);
+    background-image: linear-gradient(
+      rgba(10, 43, 127, 0.914) 0%,
+      rgb(126, 172, 245) 100%);
+    text-align: center;
+    border-radius: 1em;
   }
 
 /*** PLAYER PREVIOUS SCORES ***/
 
 .previousScores {
-  text-align: left;
+  text-align: center;
   display: table;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 120px;
   padding: 5px;
   font-size: 14px;
+  color: var(--smokey);
 }
 
 li .previousScores {
-  text-align: left;
+  text-align: center;
   display: table;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 120px;
   padding: 5px;
   font-size: 14px;
+  color: var(--smokey);
 }
 
 /*** ANSWERS LIST ATTRIBUTES ***/
@@ -211,14 +203,15 @@ li .previousScores {
   display: table;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 120px;
   padding: 5px;
-  color: white;
-  font-size: 16px;
+  color: var(--smokey);
+  font-size: 14px;
 }
 
 li:hover {
-  background-color: var(--royal);
+  background-color: turquoise;
+  color: var(--royal);
+  border-radius: 1em;
 }
 
 /******************************** RESPONSE SECTION *****************************/
@@ -231,7 +224,7 @@ hr {
   text-align: center;
 }
 
-/********************************** ALL DONE PAGE ******************************/
+/******************************** ROUND DONE PAGE ******************************/
 
 .done {
   width: 500px;
@@ -298,113 +291,274 @@ input {
 }
 /************************ MOBILE DEVICE SCREEN ATTRIBUTES **********************/
 
-/* @media screen and (width: 768px) {
+@media (max-width: 1100px) {
+
+main {
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--royal);
+  font-size: 100%;
+  flex-direction: column;
+}
+
+.header {
+font-size: 20px;
+position: inline-flex;
+}
+
+.heading {
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  margin-left: -125px;
+}
+
+.header-right {
+  position: inline-flex;
+  width: 100px;
+  font-size: 10px;
+  height: 25px;
+  border: solid 1px var(--smokey);
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.highScores {
+  text-align: center;
+  font-size: 10px;
+    width: 100px;
+    height: 25px;
+    padding-bottom: 25px;
+    border: 1px solid var(--smokey);
+  }
+
+img {
+ width: 300px;
+ margin-left: -50px;
+}
+
+#start {
+  width: 100;
+}
+
+.scoreBtn {
+  border: solid 2px grey;
+  border-radius: 0.5em;
+  height: 35px;
+  width: 125px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#goBack {
+  margin-left: 250px;
+}
+}
+
+@media (max-width: 800px) {
+
   main {
     flex-direction: column;
-    padding-top: 10px;
-    border: 2px black solid;
-    border-radius: 1em;
-    background-color: rgb(144, 151, 163);
-    background-image: linear-gradient(
-        rgba(112, 111, 116, 0.914) 0%,
-        rgb(211, 211, 224) 100%);
-      font-size: 14px;  
-    }
-
-    .header,
-    .heading {
-      flex-direction: column;
-      height: 120px;
-      width: 90vw;
-      font-size: 66%;
-    }
-
-    .heading {
-      position: relative;
-      margin-left: 250px;
-    }
-    
-.header-right,
-.highScores {
-  flex-direction: column;
-  width: 100px;
-  font-size: 12px;
-}
-
-    img {
-      width: 66%;
-      height: 66%;
-      border-radius: 0.5em;
-      border: dashed 1.5px var(--smokey);
-    }
-
-    #start {
-      background-color: var(--royal);
-      background-image: linear-gradient(
-        rgba(10, 43, 127, 0.914) 0%,
-        rgb(126, 172, 245) 100%);
-      color: var(--smokey);
-      margin-top: 30px;
-      width: 250px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: center;
-      display: inline-block;
-      font-size: 25px;
-      font-weight: bold;
-      border: solid 2px var(--smokey);
-      border-radius: 3rem;
-    }
-
-    .wrapper {
-      justify-content: center;
-      height: 150%;
-      width: 66%;
-    }
-    
-    .content {
-      width: 350px;
-      margin: auto;
-      text-align: center;
-    }
-
-  ol {
-    background-color: rgb(9, 194, 181);
-    background-image: linear-gradient(
-      rgba(184, 245, 248, 0.914) 0%,
-      rgb(40, 154, 146) 100%);
-    text-align: center;
-    position: relative;
-    color: var(--smokey);
-    border-radius: 2em;
-    border: solid 1.5px var(--smokey);
-    width: 550px;
-    margin-left: -100px;
-  }
-
-  hr {
-    display: none;
-    width: 33%;
   }
   
-  #comeBack {
+  .header {
+  font-size: 20px;
+  position: inline-flex;
+  }
+  
+  .heading {
+    font-size: 18px;
+    padding-top: 20px;
     text-align: center;
+    position: absolute;
+    margin-left: -125px;
+  }
+  
+  .header-right {
+    position: inline-flex;
+    width: 100px;
+    font-size: 10px;
+    height: 25px;
+    border: solid 1px var(--smokey);
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .highScores {
+    text-align: center;
+    font-size: 10px;
+      width: 100px;
+      height: 25px;
+      padding-bottom: 25px;
+      border: 1px solid var(--smokey);
+    }
+  
+  img {
+   width: 225px;
+   margin-left: -75px;
+  }
+  
+  #start {
+    width: 100;
+  }
+  
+  .scoreBtn {
+    border: solid 2px grey;
+    border-radius: 0.5em;
+    height: 35px;
+    width: 125px;
+    font-weight: bold;
+    margin-left: 10px;
   }
 
-}
-
-@media screen and (max-width: 504px) {
-  .large-font {
-    font-size: 2em;
+  #goBack {
+    margin-left: 150px;
+  }
   }
 
-  .reset-button {
-    font-size: 12px;
-    width: 20ox;
+  @media (max-width: 650px) {
+
+    main {
+      flex-direction: column;
+    }
     
-  }
+    .header {
+    font-size: 20px;
+    position: inline-flex;
+    }
+    
+    .heading {
+      font-size: 15px;
+      padding-top: 20px;
+      text-align: center;
+      position: absolute;
+      margin-left: -200px;
+    }
+    
+    .header-right {
+      position: inline-flex;
+      width: 100px;
+      font-size: 10px;
+      height: 25px;
+      border: solid 1px var(--smokey);
+      text-align: center;
+      padding-bottom: 25px;
+    }
+    
+    .highScores {
+      text-align: center;
+      font-size: 10px;
+        width: 100px;
+        height: 25px;
+        padding-bottom: 25px;
+        border: 1px solid var(--smokey);
+      }
+    
+    img {
+     width: 200px;
+     margin-left: -100px;
+    }
 
-  .timer {
-    height: 200px;
-  }
-}  */
+    p {
+      font-size: 13px;
+    }
+    
+    #start {
+      width: 100px;
+      font-size: 14px;
+    }
+    
+    .scoreBtn {
+      border: solid 2px grey;
+      border-radius: 0.5em;
+      height: 35px;
+      width: 125px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    #goBack {
+      margin-left: 75px;
+    }
+    }
+
+    @media (max-width: 550px) {
+
+      main {
+        flex-direction: column;
+        font-size: 14px;
+      }
+      
+      .header {
+      font-size: 15px;
+      position: inline-flex;
+      }
+      
+      .heading {
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: center;
+        position: absolute;
+        margin-left: -250px;
+      }
+      
+      .header-right {
+        position: inline-flex;
+        width: 100px;
+        font-size: 10px;
+        height: 25px;
+        border: solid 1px var(--smokey);
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      
+      .highScores {
+        text-align: center;
+        font-size: 10px;
+          width: 100px;
+          height: 25px;
+          padding-bottom: 25px;
+          border: 1px solid var(--smokey);
+        }
+      
+      img {
+       width: 200px;
+       margin-left: -110px;
+      }
+      
+      p {
+        font-size: 13px;
+        padding-right: 15px;
+      }
+
+      ol {
+        margin-right: 20px;
+        font-size: 12px;
+      }
+
+      .listItem {
+        font-size: 12px;
+        padding-left: 20px;
+      }
+
+      #start {
+        width: 100px;
+        font-size: 14px;
+      }
+      
+      .scoreBtn {
+        border: solid 2px grey;
+        border-radius: 0.5em;
+        height: 35px;
+        width: 125px;
+        font-weight: bold;
+      }
+
+      #goBack {
+        margin-right: 75px;
+      }
+      }
